@@ -1,0 +1,88 @@
+//main .styl
+
+@import 'nib'
+
+global-reset()
+reset-html5()
+
+body{
+	overflow hidden
+	min-height 100%
+	height 100%
+	width 100%
+	font-family: 'Lato', sans-serif
+	font-size: 300
+}
+
+.credit
+	position absolute
+	background rgba(0,0,0,.8)
+	opacity 0
+	transform translate3d(0,0,1px)
+	transition opacity .4s
+	min-height 100%
+	height 100%
+	width 100%
+	top 0
+	left 0
+
+	text-align center
+	color #fff
+	
+	h1
+		transform translate3d(0,30px,1px)
+		font-size 60px
+		height 70px
+		width 400px
+		position absolute
+		top 50%
+		margin-top -100px
+		left 50%
+		margin-left -200px
+		opacity 0
+		transition-properties opacity transform
+		transition-duration 1.5s
+		transition-delay:.5s
+
+	h2
+		transform translate3d(0,30px,1px)
+		opacity 0
+		font-size 20px
+		height 70px
+		width 400px
+		position absolute
+		top 50%
+		margin-top -30px
+		left 50%
+		margin-left -200px
+		opacity 0
+		transition-properties opacity transform
+		transition-duration 1.5s
+		transition-delay:1s
+
+	p
+		transform translate3d(0,30px,1px)
+		opacity 0
+		text-align justify
+		font-size 12px
+		height 80px
+		width 400px
+		position absolute
+		line-height 18px
+		bottom 100px
+		left 50%
+		margin-left -200px
+		opacity 0
+		transition-properties opacity transform
+		transition-duration 1.5s
+		transition-delay:1.5s
+		span
+			display inline-block
+			text-align center
+			width 100%
+
+	&.activate
+		opacity 1
+		h1, h2, p
+			transform translate3d(0,0,1px)
+			opacity 1

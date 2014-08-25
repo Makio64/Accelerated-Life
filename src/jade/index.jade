@@ -1,0 +1,92 @@
+doctype html
+html(lang="en")
+	//- Hello and welcome in the source of 90854309930
+	//- 
+	//- I think this entrie as an exploration in some abstract art to illustrate the life.
+	//- I want the user feel the emotions as he evolve in the most cray connected worlds network witch is the life
+	//- 
+	//-                                                    .`
+	//-                                                 _.`.`
+	//-                                             _.-` .`
+	//-                                     ___.---` _.-`
+	//-                             __..---`___..---`
+	//-                    _...--.-`   _.--`
+	//-                _.-`.-`.-`  _.-`
+	//-             .-` .`  .`   .`
+	//-  .         /   /   /    /                    .
+	//-  \`-.._    |  |    \    `.              _..-`/
+	//- .'-.._ ``--.._\     `. -- `.      _..-``  _..-`.
+	//- `_    _       `-. .`        `. .-`      _    _`
+	//-   `.``           .            \          ``.`
+	//-    `-.-'    _   .              :   _   `-.-`
+	//-      `..-..'    ;       .` `.  '    `..-..`
+	//-          /      .      : .-. : :        \
+	//-          `._     \     ;( O ) /      _.`
+	//-   LGB       `-._.'`.    .`-'.' `._.-'
+	//-                     `-....-`
+
+	head
+		meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+		meta(name="viewport", content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width, minimal-ui")
+		meta(name="apple-mobile-web-app-capable" content="yes")
+		meta(name="apple-mobile-web-app-status-bar-style" content="black")
+
+		meta(property="og:site_name", content="")
+		meta(property="og:title", content="")
+		meta(property="og:description", content="")
+		meta(property="og:type", content="")
+		meta(property="og:url", content="")
+		meta(property="og:image", content="")
+				
+		title 90854309930
+		link(href='http://fonts.googleapis.com/css?family=Lato:300', rel='stylesheet', type='text/css')
+		// build:css css/main.css
+		link(rel='stylesheet', href='css/main.css')
+		// endbuild
+	body
+
+		.credit
+			h1 Accelerated life
+			h2 Made with love by @makio64
+			p
+				| This Game is my entrie for the LudumDare30. It's think as a free exploration in abstract art.
+				| It illustrate the life and how much we change during our life as well as the worlds, our relationship & basiquely, everything. 
+				| <br><br><span>Press any arrows of your keyboard to start</span>
+
+		// build:js js/vendor.js
+		// bower:js
+		// endbower
+		// endbuild
+
+		//- debug only
+		//- script(type='text/javascript', src='bower_components/pixi.js/bin/pixi.dev.js')
+		
+		// build:js js/main.js
+
+		script(type='text/javascript', src='js/fps.js')
+
+		//- HomeMade Shaders
+		script(type='text/javascript', src='js/shaders/ColorFilter.js')
+		script(type='text/javascript', src='js/shaders/NoiseFilter.js')
+
+		//- CORE
+		script(type='text/javascript', src='js/core/Constant.js')
+		script(type='text/javascript', src='js/core/Parameters.js')
+
+		script(type='text/javascript', src='js/core/2d/Stage2d.js')
+		
+		script(type='text/javascript', src='js/core/utils/ObjectPool.js')
+
+		script(type='text/javascript', src='js/core/scenes/SceneTraveler.js')
+		script(type='text/javascript', src='js/core/scenes/Scene.js')
+
+		//- MATH
+		script(type='text/javascript', src='js/core/2d/Math2d.js')
+
+		//- Scenes
+		script(type='text/javascript', src='js/ld/loader/LoaderScene.js')
+		script(type='text/javascript', src='js/ld/arrows/ArrowsScene.js')
+
+		//- MAIN
+		script(type='text/javascript', src='js/main.js')
+		// endbuild
