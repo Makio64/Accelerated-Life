@@ -22,6 +22,8 @@ class LoaderScene extends Scene
 		loader.addEventListener('onComplete',@onTextureLoaded)
 		loader.load()
 
+		TweenLite.to(@,30,{percent:.5,ease:Quad.easeInOut,onUpdate:@onUpdatePercent})
+
 		window.setTimeout(()->
 			$('.credit').addClass('activate') 
 		, 200

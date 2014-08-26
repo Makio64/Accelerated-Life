@@ -28,6 +28,11 @@ LoaderScene = (function(_super) {
     loader = new PIXI.AssetLoader(['./textures/01.json'], false);
     loader.addEventListener('onComplete', this.onTextureLoaded);
     loader.load();
+    TweenLite.to(this, 30, {
+      percent: .5,
+      ease: Quad.easeInOut,
+      onUpdate: this.onUpdatePercent
+    });
     window.setTimeout(function() {
       return $('.credit').addClass('activate');
     }, 200);

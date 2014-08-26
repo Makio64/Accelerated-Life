@@ -125,6 +125,7 @@ class ArrowsScene extends Scene
 		return
 
 	resize:()->
+		@background.resize()
 		return
 
 

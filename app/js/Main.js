@@ -44,6 +44,8 @@ Main = (function() {
     var height, width;
     width = window.innerWidth;
     height = window.innerHeight;
+    Stage2d.resize();
+    SceneTraveler.currentScene.resize();
   };
 
   return Main;

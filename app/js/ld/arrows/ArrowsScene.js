@@ -137,7 +137,9 @@ ArrowsScene = (function(_super) {
     }
   };
 
-  ArrowsScene.prototype.resize = function() {};
+  ArrowsScene.prototype.resize = function() {
+    this.background.resize();
+  };
 
   ArrowsScene.prototype.update = function(dt) {
     var distance, dx, dy, i, rotation, _i, _j, _k, _l, _ref, _ref1, _ref2, _ref3;
